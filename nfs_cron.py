@@ -15,12 +15,12 @@ FLUSH PRIVILEGES;
 
 CREATE DATABASE nfs_call;
 USE nfs_call;
-CREATE TABLE nfs_client (id int(40) NOT NULL AUTO_INCREMENT,name varchar(255),time varchar(255),ip varchar(255),PRIMARY KEY (id));
+CREATE TABLE nfs_client (id int(40) NOT NULL AUTO_INCREMENT,name varchar(255),time varchar(255),ip varchar(255),mounted text(),PRIMARY KEY (id));
 
 
 ####
 
-INSERT INTO nfs_client (name,time,ip) VALUES ('raspi42',0,'192.168.1.35');
+INSERT INTO nfs_client (name,time,ip,mounted) VALUES ('clientx',0,'192.168.1.35','{}');
 
 
 
