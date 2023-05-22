@@ -153,7 +153,7 @@ else:
 
 			if mount[x[1]] == 0: #when target not mountet
 				if int(x[2]) > (int(now)-380): #is the last calls under 5 minutes
-					os.system ('mount '+x[1]+':'+freigabe+' '+path+'/'+x[1]) #Mount NFS
+					os.system ('mount '+x[2]+':'+freigabe+' '+path+'/'+x[1]) #Mount NFS
 					mount[x[1]] = 1
 				
 			else:
